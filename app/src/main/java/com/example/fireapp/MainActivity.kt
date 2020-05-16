@@ -61,6 +61,7 @@ class MainActivity : AppCompatActivity() {
                  appProgress.dismiss()
                 if (task.isSuccessful){
                     showMessage("Saving successful", "$firstname data has been saved successfully")
+                    clearEditText()
                 }else{
                     showMessage("Saving unsuccessful", "Data has not been saved")
                 }
